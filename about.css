@@ -1,0 +1,616 @@
+/* =========================================================
+   PAGE 4 — ABOUT
+========================================================= */
+
+main {
+  margin-top: 80px;
+}
+
+
+.flexgappage {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+
+.about-page4 {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 70px 0 0;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.page4-hero {
+  background:
+    linear-gradient(
+      rgba(20, 28, 26, 0.35),
+      rgba(20, 28, 26, 0.35)
+    ),
+    url("./hero-4.jpg") center / cover no-repeat;
+
+  padding: 194px 0;
+}
+
+
+.text-hero h1 {
+  font-size: 60px;
+  font-weight: 400;
+}
+
+
+/* =========================================================
+   TEXT
+========================================================= */
+
+.aplace-text {
+  gap: 20px;
+}
+
+
+.aplace-text p {
+  font-weight: 500;
+  font-size: 25px;
+}
+
+
+/* =========================================================
+   LUXURY
+========================================================= */
+
+.luxury {
+  align-items: center;
+}
+
+
+.luxury .p-2 {
+  width: 70%;
+  padding: 30px;
+  text-align: center;
+}
+
+
+/* =========================================================
+   STATISTICS
+========================================================= */
+
+.statistic-end {
+  border: 1px solid var(--border-sage);
+  height: 160px;
+}
+
+
+.statistic-img {
+  height: 500px;
+  animation: fromLeft 0.8s ease 0.15s both;
+  overflow: hidden;
+}
+
+
+.statistic-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 10% 53%;
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+
+.statistic-img:hover img {
+  transform: scale(1.03);
+}
+
+
+.statistic {
+  flex-direction: column;
+}
+
+
+.statistic-text {
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1260px;
+
+  animation: fromRight 0.8s ease 0.25s both;
+}
+
+
+.statistic-text div {
+  width: 290px;
+}
+
+
+.statistic-text > div {
+  transition: transform 0.3s ease;
+}
+
+
+.statistic-text > div:hover {
+  transform: translateY(-5px);
+}
+
+
+.statistic-text h3 {
+  font-size: 55px;
+  transition: color 0.3s ease;
+}
+
+
+.statistic-text > div:hover h3 {
+  color: var(--bronze-600);
+}
+
+
+/* =========================================================
+   PHILOSOPHY
+========================================================= */
+
+.cards-stay .experience-text,
+.card-exp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  align-items: start;
+}
+
+
+.exp {
+  text-align: center;
+}
+
+
+.philosophy > .exp {
+  animation: fadeUp 0.8s ease both;
+}
+
+
+.philosophy .card-exp {
+  animation: fadeUp 0.7s ease both;
+
+  transition:
+    transform 0.3s ease,
+    color 0.3s ease;
+}
+
+
+.philosophy .card-exp:hover {
+  transform: translateY(-5px);
+}
+
+
+.philosophy .card-exp:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+
+.philosophy .card-exp:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+
+.philosophy .card-exp:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+
+.philosophy .card-exp h3 {
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+
+.philosophy .card-exp:hover h3 {
+  color: var(--bronze-600);
+}
+
+
+/* =========================================================
+   END
+========================================================= */
+
+.end-page4 {
+  padding: 80px 0;
+  animation: fadeUp 0.8s ease both;
+}
+
+
+.end-page4 h3 {
+  font-size: 90px;
+  font-weight: 500;
+}
+
+
+.end-page4 p {
+  font-size: 26px;
+}
+
+
+.about-page4 > hr {
+  width: 90%;
+  border: none;
+  border-top: 1px solid var(--border-sage);
+}
+
+
+.about-page4 > .card-exp {
+  font-size: 35px;
+}
+
+
+@keyframes fromLeft {
+
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes fromRight {
+
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .container {
+    width: 88%;
+  }
+
+  main {
+    margin-top: 66px;
+  }
+
+  .about-page4 {
+    gap: 55px;
+    padding: 60px 0;
+  }
+
+  .page4-hero {
+    padding: 140px 0;
+    background-position: center center;
+  }
+
+  .text-hero h1 {
+    font-size: 50px;
+  }
+
+  .text-hero p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .luxury {
+    gap: 20px;
+  }
+
+  .luxury > p:first-child {
+    font-size: 17px;
+  }
+
+  .aplace-text h3 {
+    font-size: 38px;
+  }
+
+  .luxury .p-2 {
+    width: 85%;
+    padding: 20px;
+    font-size: 18px;
+    line-height: 1.7;
+  }
+
+  .statistic {
+    gap: 35px;
+  }
+
+  .statistic-img {
+    width: 100%;
+    height: 350px;
+  }
+
+  .statistic-img img {
+    object-position: center center;
+  }
+
+  .statistic-text {
+    width: 100%;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .statistic-text > div {
+    width: 30%;
+  }
+
+  .statistic-text h3 {
+    font-size: 42px;
+  }
+
+  .statistic-text p {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .statistic-end {
+    height: 100px;
+  }
+
+  .exp {
+    font-size: 42px;
+  }
+
+  .philosophy > .flexgappage {
+    gap: 30px;
+  }
+
+  .philosophy .card-exp {
+    width: 33.333%;
+  }
+
+  .philosophy .card-exp h3 {
+    font-size: 26px;
+  }
+
+  .philosophy .card-exp p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-page4 > .card-exp {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .end-page4 {
+    padding: 60px 0;
+  }
+
+  .end-page4 h3 {
+    font-size: 65px;
+  }
+
+  .end-page4 p {
+    font-size: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
+  main {
+    margin-top: 66px;
+  }
+
+  .about-page4 {
+    gap: 50px;
+    padding: 50px 0;
+  }
+
+  .page4-hero {
+    padding: 100px 0;
+    background-position: center center;
+  }
+
+  .text-hero {
+    gap: 18px;
+  }
+
+  .text-hero h1 {
+    font-size: 40px;
+  }
+
+  .text-hero p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .text-hero p br {
+    display: none;
+  }
+
+  .luxury {
+    width: 90%;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .luxury .p-2 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .aplace-text h3 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .luxury > p:first-child {
+    font-size: 15px;
+  }
+
+  .statistic {
+    width: 90%;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .statistic-img {
+    width: 100%;
+    height: 280px;
+  }
+
+  .statistic-img img {
+    object-position: center center;
+  }
+
+  .statistic-text {
+    width: 100%;
+    flex-direction: row;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .statistic-text > div {
+    width: 33.333%;
+  }
+
+  .statistic-text h3 {
+    font-size: 35px;
+  }
+
+  .statistic-text p {
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .statistic-end {
+    height: auto;
+    align-self: stretch;
+  }
+
+  .exp {
+    font-size: 35px;
+    margin: 20px 0;
+  }
+
+  .philosophy > .flexgappage {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .philosophy .card-exp {
+    width: 100%;
+  }
+
+  .philosophy .card-exp h3 {
+    font-size: 26px;
+  }
+
+  .philosophy .card-exp p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .about-page4 > .card-exp {
+    font-size: 24px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .end-page4 {
+    padding: 50px 0;
+  }
+
+  .end-page4 h3 {
+    font-size: 55px;
+  }
+
+  .end-page4 p {
+    font-size: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media screen and (max-width: 480px) {
+
+  .page4-hero {
+    padding: 80px 0;
+  }
+
+  .text-hero h1 {
+    font-size: 34px;
+  }
+
+  .text-hero p {
+    font-size: 13px;
+  }
+
+  .luxury .p-2 {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .aplace-text h3 {
+    font-size: 28px;
+  }
+
+  .statistic-img {
+    height: 230px;
+  }
+
+  .statistic-text h3 {
+    font-size: 29px;
+  }
+
+  .statistic-text p {
+    font-size: 11px;
+  }
+
+  .exp {
+    font-size: 30px;
+  }
+
+  .philosophy .card-exp h3 {
+    font-size: 24px;
+  }
+
+  .philosophy .card-exp p {
+    font-size: 14px;
+  }
+
+  .about-page4 > .card-exp {
+    font-size: 20px;
+  }
+
+  .end-page4 h3 {
+    font-size: 45px;
+  }
+
+  .end-page4 p {
+    font-size: 16px;
+  }
+
+}

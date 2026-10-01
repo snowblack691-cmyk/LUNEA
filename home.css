@@ -1,0 +1,891 @@
+/* =========================================================
+   PAGE 1
+========================================================= */
+
+main {
+  margin-top: 80px;
+}
+
+
+/* =========================================================
+   LAYOUT
+========================================================= */
+
+.flexgappage {
+  display: flex;
+  gap: 80px;
+  justify-content: space-between;
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 70px 0;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  background:
+    linear-gradient(
+      rgba(20, 28, 26, 0.35),
+      rgba(20, 28, 26, 0.35)
+    ),
+    url("./hero-one.jpg") center / cover no-repeat;
+
+  padding: 100px 0;
+}
+
+
+.text-hero {
+  gap: 20px;
+}
+
+
+.text-hero h1 {
+  font-size: 60px;
+  font-weight: 400;
+  animation: fadeUp 0.8s ease both;
+}
+
+
+.text-hero p {
+  animation: fadeUp 0.8s ease 0.15s both;
+}
+
+
+.text-hero .btn-pag1 {
+  animation: fadeUp 0.8s ease 0.3s both;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.btn-pag1 {
+  text-align: center;
+  color: var(--forest-800);
+  border: 1px solid var(--border-sage);
+  background-color: var(--ivory-50);
+  border-radius: 4px;
+  padding: 20px 20px 20px 40px;
+  font-size: 24px;
+  font-weight: 600;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.btn-pag1 span {
+  opacity: 0;
+  transform: translate(-4px, 4px);
+  transition: 0.3s ease;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+
+.btn-pag1:hover span {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
+.btn-pag1:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px var(--shadow-medium);
+}
+
+
+/* =========================================================
+   A PLACE
+========================================================= */
+
+.aplace-page1 {
+  gap: 30px;
+}
+
+
+.aplace-img {
+  width: 1600px;
+  height: 350px !important;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.aplace-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 70%;
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+
+.aplace-img:hover img {
+  transform: scale(1.03);
+}
+
+
+.aplace-page1 .aplace-img {
+  animation: slideFromLeft 0.8s ease both;
+}
+
+
+.aplace-page1 .aplace-text {
+  animation: slideFromRight 0.8s ease 0.15s both;
+}
+
+
+.aplace-text {
+  gap: 20px;
+}
+
+
+.aplace-text ul {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin: 0;
+  color: var(--forest-800);
+  display: flex;
+  gap: 80px;
+}
+
+
+.aplace-text li {
+  color: var(--forest-800);
+  margin-bottom: 8px;
+  font-size: 34px;
+}
+
+
+.btn-pages {
+  width: fit-content;
+  font-size: 20px;
+}
+
+
+.amoment-ab {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  color: var(--ivory-50);
+  z-index: 2;
+}
+
+
+.amoment-ab h3 {
+  font-size: 49px;
+  font-weight: 500;
+  margin: 0 5%;
+}
+
+
+.amoment-ab p {
+  font-weight: 500;
+  margin: 0 5%;
+}
+
+
+/* =========================================================
+   EXPERIENCE
+========================================================= */
+
+.experience-page1 {
+  gap: 30px;
+}
+
+
+.experience-page1 > .exp {
+  animation: slideFromLeft 0.8s ease both;
+}
+
+
+.card-exp {
+  width: 300px;
+  transition: transform 0.35s ease;
+}
+
+
+.card-exp:hover {
+  transform: translateY(-6px);
+}
+
+
+.card-exp .experience-img {
+  width: 300px;
+  height: 200px !important;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+
+.card-exp .experience-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+
+.experience-img {
+  overflow: hidden;
+}
+
+
+.experience-img:hover img {
+  transform: scale(1.05);
+}
+
+
+.experience-text {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+
+.experience-text h3,
+.experience-text p {
+  color: var(--forest-800);
+}
+
+
+.experience-text h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+
+.experience-page1 .card-exp:nth-child(2) {
+  animation: fadeUp 0.7s ease 0.1s both;
+}
+
+
+.experience-page1 .card-exp:nth-child(3) {
+  animation: fadeUp 0.7s ease 0.2s both;
+}
+
+
+.experience-page1 .card-exp:nth-child(4) {
+  animation: fadeUp 0.7s ease 0.3s both;
+}
+
+
+/* =========================================================
+   STAY
+========================================================= */
+
+.cards-stay {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+
+.cards-stay .card-exp {
+  width: 33.3%;
+}
+
+
+.stay-page1 h3 {
+  text-align: center;
+}
+
+
+.cards-stay .experience-text,
+.cards-stay .card-exp {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  align-items: start;
+}
+
+
+.cards-stay .experience-img {
+  width: 100%;
+}
+
+
+.stay-page1 > .exp {
+  animation: fadeUp 0.8s ease both;
+}
+
+
+.cards-stay .card-exp:nth-child(1) {
+  animation: slideFromLeft 0.8s ease 0.1s both;
+}
+
+
+.cards-stay .card-exp:nth-child(2) {
+  animation: fadeUp 0.8s ease 0.2s both;
+}
+
+
+.cards-stay .card-exp:nth-child(3) {
+  animation: slideFromRight 0.8s ease 0.3s both;
+}
+
+
+/* =========================================================
+   DESIGN
+========================================================= */
+
+.disign-page1 {
+  display: flex;
+  align-items: center;
+  gap: 30px !important;
+}
+
+
+.moment {
+  width: 850px;
+}
+
+
+.moment img {
+  width: 559px;
+}
+
+
+.disign-page1 h3 {
+  font-size: 47px;
+}
+
+
+.disign-page1 .moment {
+  animation: slideFromLeft 0.8s ease both;
+}
+
+
+.disign-page1 .aplace-text {
+  animation: slideFromRight 0.8s ease 0.15s both;
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-section {
+  background-color: var(--forest-800);
+  padding: 80px 0;
+}
+
+
+.contact-section h3 {
+  font-size: 49px;
+  font-weight: 400 !important;
+  animation: fadeUp 0.8s ease both;
+}
+
+
+.contact-section .btn-pag1 {
+  animation: fadeUp 0.8s ease 0.15s both;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes slideFromLeft {
+
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes slideFromRight {
+
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes scaleIn {
+
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+
+  .container {
+    width: 88%;
+  }
+
+  main {
+    margin-top:66px;
+  }
+
+  .content {
+    gap: 75px;
+    padding: 60px 0;
+  }
+
+  .hero {
+    padding: 90px 0;
+    background-position: center center;
+  }
+
+  .text-hero {
+    gap: 22px;
+  }
+
+  .text-hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+  }
+
+  .text-hero p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .btn-pag1 {
+    padding: 16px 18px 16px 30px;
+    font-size: 21px;
+  }
+
+  .aplace-page1 {
+    gap: 40px;
+  }
+
+  .aplace-page1 .aplace-img {
+    width: 48%;
+    height: 330px !important;
+  }
+
+  .aplace-page1 .aplace-img img {
+    object-position: center center;
+  }
+
+  .aplace-page1 .aplace-text {
+    width: 48%;
+  }
+
+  .aplace-text {
+    gap: 15px;
+  }
+
+  .aplace-text h3 {
+    font-size: 36px;
+  }
+
+  .aplace-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .experience-page1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 35px;
+    align-items: start;
+  }
+
+  .experience-page1 .exp {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 42px;
+  }
+
+  .experience-page1 .card-exp {
+    width: 100%;
+  }
+
+  .experience-page1 .experience-img {
+    width: 100%;
+    height: 230px !important;
+  }
+
+  .experience-page1 .experience-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .experience-text {
+    gap: 8px;
+  }
+
+  .experience-text h3 {
+    font-size: 22px;
+  }
+
+  .experience-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .stay-page1 .exp {
+    font-size: 42px;
+    margin: 0 0 30px;
+  }
+
+  .cards-stay {
+    gap: 25px;
+  }
+
+  .cards-stay .card-exp {
+    width: 33.333%;
+  }
+
+  .cards-stay .experience-img {
+    width: 100%;
+    height: 220px !important;
+  }
+
+  .cards-stay .experience-img img {
+    object-position: center center;
+  }
+
+  .disign-page1 {
+    gap: 35px !important;
+    align-items: center;
+  }
+
+  .disign-page1 .moment {
+    width: 50%;
+  }
+
+  .disign-page1 .moment img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .disign-page1 .aplace-text {
+    width: 50%;
+  }
+
+  .disign-page1 h3 {
+    font-size: 38px;
+  }
+
+  .aplace-text ul {
+    gap: 36px;
+  }
+
+  .aplace-text li {
+    font-size: 25px;
+  }
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-section h3 {
+    font-size: 42px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+  .container {
+    width: 90%;
+  }
+
+  main {
+    margin-top: 66px;
+  }
+
+  .content {
+    gap: 65px;
+    padding: 50px 0;
+  }
+
+  .hero {
+    padding: 75px 0;
+    background-position: center center;
+  }
+
+  .text-hero {
+    gap: 22px;
+  }
+
+  .text-hero h1 {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  .text-hero p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .btn-pag1 {
+    padding: 14px 15px 14px 25px;
+    font-size: 18px;
+  }
+
+  .btn-pag1 span {
+    font-size: 22px;
+  }
+
+  .aplace-page1 {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .aplace-page1 .aplace-img {
+    width: 100%;
+    height: 300px !important;
+  }
+
+  .aplace-page1 .aplace-img img {
+    object-position: center 80%;
+  }
+
+  .aplace-text {
+    gap: 15px;
+  }
+
+  .aplace-text h3 {
+    font-size: 34px;
+  }
+
+  .aplace-text p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .experience-page1 {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .experience-page1 .exp {
+    margin: 0;
+    font-size: 38px;
+  }
+
+  .experience-page1 .card-exp {
+    width: 100%;
+  }
+
+  .experience-page1 .experience-img {
+    width: 100%;
+    height: 230px !important;
+  }
+
+  .experience-page1 .experience-img img {
+    object-position: center center;
+  }
+
+  .experience-text {
+    gap: 8px;
+  }
+
+  .experience-text h3 {
+    font-size: 22px;
+  }
+
+  .experience-text p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .stay-page1 .exp {
+    text-align: left;
+    font-size: 38px;
+    margin: 0 0 25px;
+  }
+
+  .cards-stay {
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .cards-stay .card-exp {
+    width: 100%;
+  }
+
+  .cards-stay .experience-img {
+    width: 100%;
+    height: 230px !important;
+  }
+
+  .cards-stay .experience-img img {
+    object-position: center 70%;
+  }
+
+  .disign-page1 {
+    flex-direction: column;
+    gap: 30px !important;
+    align-items: stretch;
+  }
+
+  .disign-page1 .moment {
+    width: 100%;
+  }
+
+  .disign-page1 .moment img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+  }
+
+  .disign-page1 .aplace-text {
+    width: 100%;
+  }
+
+  .disign-page1 h3 {
+    font-size: 36px;
+  }
+
+  .amoment-ab {
+    padding: 20px;
+  }
+
+  .amoment-ab h3 {
+    font-size: 34px;
+    margin: 0;
+  }
+
+  .amoment-ab p {
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .aplace-text ul {
+    justify-content: space-between;
+  }
+
+  .aplace-text li {
+    font-size: 21px;
+  }
+
+  .contact-section {
+    padding: 60px 20px;
+  }
+
+  .contact-section h3 {
+    font-size: 34px;
+  }
+
+}
+
+
+@media screen and (max-width: 480px) {
+
+  .hero {
+    padding: 70px 0;
+  }
+
+  .text-hero h1 {
+    font-size: 32px;
+  }
+
+  .text-hero p {
+    font-size: 14px;
+  }
+
+  .btn-pag1 {
+    font-size: 16px;
+    padding: 12px 12px 12px 20px;
+  }
+
+  .content {
+    gap: 60px;
+  }
+
+  .aplace-img,
+  .disign-page1 .aplace-img {
+    height: 250px !important;
+  }
+
+  .aplace-text h3,
+  .disign-page1 h3 {
+    font-size: 30px;
+  }
+
+  .exp {
+    font-size: 32px;
+  }
+
+  .card-exp .experience-img,
+  .cards-stay .experience-img {
+    height: 210px !important;
+  }
+
+  .experience-text h3 {
+    font-size: 21px;
+  }
+
+  .experience-text p,
+  .aplace-text p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .aplace-text ul {
+    gap: 15px;
+  }
+
+  .aplace-text li {
+    font-size: 17px;
+  }
+
+  .contact-section h3 {
+    font-size: 30px;
+  }
+
+}

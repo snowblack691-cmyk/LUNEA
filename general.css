@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+/* =========================================================
+   TYPOGRAPHY
+========================================================= */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cormorant Garamond", serif;
+}
+
+
+/* =========================================================
+   LUNÉA — COMMON CSS
+   Shared across all pages
+========================================================= */
+
+
+/* =========================================================
+   ROOT VARIABLES
+========================================================= */
+
+:root {
+  
+  /* =========================
+     COLORS
+  ========================= */
+  
+  /* Forest */
+  --forest-900: #1C2927;
+  --forest-800: #24312F;
+  --forest-700: #30413D;
+  --forest-600: #3F514B;
+  --forest-500: #53635D;
+  
+  /* Sage */
+  --sage-400: #7B8982;
+  --sage-300: #9DA8A1;
+  --sage-200: #BDC5BE;
+  --sage-100: #DDE1DA;
+  --sage-50: #EEF0EC;
+  
+  /* Warm Ivory */
+  --ivory-50: #FBFAF7;
+  --ivory-100: #F5F3EE;
+  --ivory-200: #EEEAE1;
+  --ivory-300: #E4DFD4;
+  --ivory-400: #D7D0C3;
+  
+  /* Bronze */
+  --bronze-700: #806A4B;
+  --bronze-600: #9C825D;
+  --bronze-500: #B89B72;
+  --bronze-400: #C8AF8C;
+  --bronze-300: #D8C5A8;
+  
+  /* Text */
+  --text-dark: #303735;
+  --text-main: #3E4743;
+  --text-secondary: #65706B;
+  --text-muted: #89918C;
+  --text-light: #B4BAB5;
+  
+  /* White */
+  --white: #FFFFFF;
+  --white-soft: #FDFDFC;
+  
+  /* Dark */
+  --dark-950: #141C1A;
+  --dark-900: #1C2927;
+  --dark-800: #24312F;
+  --dark-700: #30413D;
+  
+  
+  /* =========================
+     BORDERS
+  ========================= */
+  
+  --border-light: #E2E0D9;
+  --border-medium: #CCC9C0;
+  --border-sage: #C9D0CA;
+  --border-bronze: #B89B72;
+  
+  
+  /* =========================
+     SHADOWS
+  ========================= */
+  
+  --shadow-soft: rgba(36, 49, 47, 0.08);
+  --shadow-medium: rgba(36, 49, 47, 0.14);
+  --shadow-dark: rgba(20, 28, 26, 0.22);
+  --ivory-50-shadow: rgba(251, 250, 247, 0.1);
+  
+  
+  /* =========================
+     OVERLAYS
+  ========================= */
+  
+  --overlay-light: rgba(28, 41, 39, 0.25);
+  --overlay-medium: rgba(28, 41, 39, 0.45);
+  --overlay-dark: rgba(20, 28, 26, 0.70);
+  
+  
+  /* =========================
+     TRANSITIONS
+  ========================= */
+  
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.35s ease;
+  --transition-smooth: 0.5s ease;
+  --transition-slow: 0.8s ease;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+ul {
+  list-style: none;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.threeflexhero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+/* =========================================================
+   COMMON TEXT
+========================================================= */
+
+.aplace-text {
+  color: var(--forest-800);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+.aplace-text h3 {
+  font-size: 40px;
+}
+
+
+.aplace-text p {
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   DISCOVER BUTTON
+========================================================= */
+
+.btn-disc {
+  color: var(--forest-800);
+  font-weight: 800;
+  display: inline-block;
+  
+  transition:
+    color var(--transition-normal),
+    transform var(--transition-normal);
+}
+
+
+.btn-disc:hover {
+  color: var(--bronze-600);
+  transform: translateX(5px);
+}
+
+
+/* =========================================================
+   PLAN BUTTON
+========================================================= */
+
+.btn-plan {
+  border: 1px solid transparent;
+  color: var(--ivory-50);
+  background-color: var(--forest-800);
+  padding: 8px 15px;
+  border-radius: 10px;
+  
+  transition:
+    background-color var(--transition-normal),
+    color var(--transition-normal),
+    transform var(--transition-normal),
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+
+.btn-plan:hover {
+  background-color: var(--sage-50);
+  border: 1px solid var(--overlay-dark);
+  color: var(--forest-800);
+  transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   COMMON HERO TEXT
+========================================================= */
+
+.text-hero h1,
+.text-hero p,
+.contact-section h3 {
+  color: var(--ivory-50);
+ 
+  text-align: center;
+}
+
+
+/* =========================================================
+   COMMON EXP TITLE
+========================================================= */
+
+.exp {
+  font-size: 50px;
+  margin: 30px 0;
+  font-weight: 500;
+}
+
+
+/* =========================================================
+   COMMON ANIMATIONS
+========================================================= */
+
+@keyframes fadeUp {
+  
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes fadeIn {
+  
+  from {
+    opacity: 0;
+  }
+  
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+}
+
