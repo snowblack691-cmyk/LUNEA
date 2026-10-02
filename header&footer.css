@@ -374,14 +374,6 @@ footer {
 }
 
 
-/* =========================================================
-   MAIN
-========================================================= */
-
-main {
-  margin-top: 71.5px;
-}
-
 
 /* =========================================================
    ANIMATIONS
@@ -434,7 +426,7 @@ main {
 
 
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .header-PC {
     display: none;
   }
@@ -442,22 +434,10 @@ main {
   .header-mobile {
     display: flex;
   }
-  main {
-    margin-top: 67.5px;
-   }
+  
 }
 
 @media screen and (max-width: 768px) {
-
-  .header-mobile {
-    display: flex;
-  }
-
-  .header-PC {
-    display: none;
-  }
-
-
 
   footer,
   .footer,
