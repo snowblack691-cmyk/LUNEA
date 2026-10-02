@@ -207,6 +207,7 @@
 
 .experience-page1 {
   gap: 30px;
+   width: 100%;
 }
 
 
@@ -468,7 +469,7 @@
 
   .hero {
     padding: 90px 0;
-     min-height: 500px;
+     min-height: 350px;
     background-position: center center;
   }
 
