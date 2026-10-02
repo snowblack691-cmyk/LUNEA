@@ -116,7 +116,7 @@ main {
 .statistic-text {
   flex-direction: row;
   justify-content: space-between;
-  width: 1260px;
+  width: 100%;
 
   animation: fromRight 0.8s ease 0.25s both;
 }
