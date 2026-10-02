@@ -647,6 +647,7 @@
 
   .hero {
     padding: 75px 0;
+     min-height: 350px;
     background-position: center center;
   }
 
