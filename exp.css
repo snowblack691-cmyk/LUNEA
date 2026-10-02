@@ -74,7 +74,7 @@
       rgba(20, 28, 26, 0.35)
     ),
     url("./hero-3.jpg") center / cover no-repeat;
-
+min-height: 700px;
   padding: 200px 0 250px;
 
   animation: fadeIn 1s ease both;
@@ -422,6 +422,7 @@
 
   .page-3 .hero {
     padding: 120px 0;
+     min-height: 500px;
   }
 
   .text-hero {
