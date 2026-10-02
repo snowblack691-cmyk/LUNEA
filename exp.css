@@ -370,6 +370,7 @@ min-height: 700px;
 
   .page-3 .hero {
     padding: 150px 0 180px;
+     min-height: 350px;
   }
 
   .text-hero h1 {
