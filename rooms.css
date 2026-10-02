@@ -28,7 +28,7 @@ img {
 
 
 main {
-  margin-top: 80px;
+  margin-top: 71.5px;
 }
 
 
@@ -243,7 +243,7 @@ main {
 @media (max-width: 992px) {
 
   main {
-    margin-top: 60px;
+    margin-top: 67.5px;
   }
 
   .hero {
@@ -306,10 +306,6 @@ main {
 
   .container {
     width: 90%;
-  }
-
-  main {
-    margin-top: 66px;
   }
 
   .hero {
