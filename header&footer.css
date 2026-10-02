@@ -83,7 +83,7 @@ header {
 
 
 .nav-desk a:hover::after,
-.nav-desk a .active::after {
+.nav-desk a.active::after {
   width: 100%;
 }
 
@@ -379,7 +379,7 @@ footer {
 ========================================================= */
 
 main {
-  margin-top: 80px;
+  margin-top: 71.5px;
 }
 
 
@@ -430,13 +430,19 @@ main {
 
 /* =========================================================
    TAB
-========================================================= */
-@media screen and (max-width: 992px){
-   .header-mobile {
-      display: flex;
-   }
-   .header-PC {
-      display: none;
+========================================================= *
+
+@media screen and (max-width: 992px) {
+  .header-PC {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+
+   main {
+      margin-top: 67.5;
    }
 }
 
