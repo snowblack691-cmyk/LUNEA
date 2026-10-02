@@ -3,7 +3,7 @@
 ========================================================= */
 
 main {
-  margin-top: 80px;
+  margin-top: 71.5px;
 }
 
 
@@ -347,7 +347,7 @@ main {
 @media (max-width: 992px) {
 
   main {
-    margin-top: 50px;
+    margin-top: 67.5px;
   }
 
   .page-3,
@@ -423,11 +423,7 @@ main {
   .container {
     width: 90%;
   }
-
-  main {
-    margin-top: 66px;
-  }
-
+   
   .page-3,
   .cards-page3 {
     gap: 40px;
