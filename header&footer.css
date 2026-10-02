@@ -432,20 +432,6 @@ main {
    TAB
 ========================================================= *
 
-@media screen and (max-width: 992px) {
-  .header-PC {
-    display: none;
-  }
-
-  .header-mobile {
-    display: flex;
-  }
-
-   main {
-      margin-top: 67.5;
-   }
-}
-
 
 @media screen and (max-width: 768px) {
 
@@ -456,6 +442,10 @@ main {
   .header-PC {
     display: none;
   }
+
+   main {
+    margin-top: 60px;
+   }
 
   footer,
   .footer,
