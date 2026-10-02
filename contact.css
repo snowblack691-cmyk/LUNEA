@@ -280,7 +280,7 @@ img {
   }
 
 .hero-page-5 {
-   min-height: 350px!important;
+   max-height: 350px!important;
 }
    
   .contact-img {
