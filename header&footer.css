@@ -182,7 +182,7 @@ header {
   padding: 5px 0;
 }
 
-.header-list a.active {
+.header-list li a.active {
   color: var(--ivory-200);
   font-weight: 700;
 }
