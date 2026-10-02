@@ -183,7 +183,7 @@ header {
 }
 
 .header-list a.active {
-  color: var(--ivory-200);
+  backgroung-color: var(--ivory-200);
   font-weight: 700;
 }
 
