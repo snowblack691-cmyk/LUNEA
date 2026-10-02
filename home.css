@@ -117,7 +117,8 @@ main {
 
 
 .aplace-img {
-  width: 1600px;
+  max-width: 1600px;
+   width: 100%;
   height: 350px !important;
   border-radius: 5px;
   overflow: hidden;
@@ -219,7 +220,8 @@ main {
 
 
 .card-exp {
-  width: 300px;
+  max-width: 300px;
+   width: 100%;
   transition: transform 0.35s ease;
 }
 
@@ -360,7 +362,8 @@ main {
 
 
 .moment {
-  width: 850px;
+  width: 100%;
+   max-width: 850px;
 }
 
 
