@@ -182,6 +182,11 @@ header {
   padding: 5px 0;
 }
 
+.header-list a.active {
+  color: var(--ivory-200);
+  font-weight: 700;
+}
+
 
 .header-list ul {
   display: flex;
