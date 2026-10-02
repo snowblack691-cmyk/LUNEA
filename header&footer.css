@@ -430,8 +430,22 @@ main {
 
 /* =========================================================
    TAB
-========================================================= *
+========================================================= */
 
+
+
+@media (max-width: 992px) {
+  .header-PC {
+    display: none;
+  }
+
+  .header-mobile {
+    display: flex;
+  }
+  main {
+    margin-top: 67.5px;
+   }
+}
 
 @media screen and (max-width: 768px) {
 
@@ -443,9 +457,7 @@ main {
     display: none;
   }
 
-   main {
-    margin-top: 60px;
-   }
+
 
   footer,
   .footer,
@@ -466,4 +478,5 @@ main {
     align-items: flex-start;
   }
 
-}
+   }
+   
