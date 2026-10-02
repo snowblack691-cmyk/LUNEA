@@ -2,11 +2,6 @@
    PAGE 3
 ========================================================= */
 
-main {
-  margin-top: 71.5px;
-}
-
-
 .flexgappage {
   display: flex;
   gap: 80px;
@@ -345,10 +340,6 @@ main {
 ========================================================= */
 
 @media (max-width: 992px) {
-
-  main {
-    margin-top: 67.5px;
-  }
 
   .page-3,
   .cards-page3 {
