@@ -307,3 +307,9 @@ main {
   
 }
 
+@media screen and (max-width: 992px) {
+   main {
+     margin-top:53px;
+   }
+}
+
