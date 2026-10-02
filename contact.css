@@ -38,7 +38,7 @@ img {
       rgba(20, 28, 26, 0.35)
     ),
     url("./hero-5.jpg") center / cover no-repeat;
-
+  min-height: 700px;
   padding: 200px 0 250px;
 }
 
@@ -310,6 +310,7 @@ img {
 
   .hero-page-5 {
     padding: 140px 0;
+     min-height: 500px;
   }
 
   .hero-page-5 h1 {
